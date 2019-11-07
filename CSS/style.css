@@ -1,0 +1,153 @@
+html, body, .wrapper {
+    margin: 0px;
+    padding: 0px;
+    background-color: silver;
+    font-size: 4vh;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header  start*/
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    padding-top: 1%;
+    background-color: rgb(72, 196, 41);
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+
+.header .logo {
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.header p span {
+    color: red;
+}
+
+/* header  end*/
+
+/* navbar  start*/
+
+.navbar {
+    width: 60%;
+    margin: 0 auto;
+    background-color: skyblue;
+    border-radius: 10px;
+    height: 5vh;
+}
+
+.navbar ul {
+    width: 90%;
+    padding: 0px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.navbar ul li {
+    padding-top: 5%;
+    font-size: 3vh;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration-line: none;
+    white-space: nowrap;
+}
+
+.navbar ul li a:hover {
+    text-decoration-line: underline;
+    color: red;
+    transition-duration: 0.1s;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(183, 221, 185);
+    z-index: 0;
+}
+
+/* carousel start */
+
+.carousel {
+    width: 50%;
+    max-width: 900px;
+    max-height: 400px;
+    margin: 20px auto;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 320px;
+}
+
+.slider {
+    position: relative;
+    text-align: center;
+}
+
+.carousel .slider p {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    color: blanchedalmond;
+    background-color: rgba(241, 15, 15, 0.747);
+}
+
+/* carousel end */
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .copyright {
+    text-align: center;
+    color: #fff;
+    grid-column: 2;
+    font-size: 3vh;
+}
+.footer .btn__group {
+    display: flex;
+    align-items: center;
+}
+.footer .btn__group a {
+    color: white;
+    justify-content: center;
+    margin-right: 10px;
+}
+.footer .btn__group a:hover {
+    color: rebeccapurple;
+    transform: scale(1.4);
+    
+}
+
+.about {
+    margin: 20px auto;
+    width: 80%;
+    background-color: gray;
+    color: black;
+    font-size: 3vh;
+}
