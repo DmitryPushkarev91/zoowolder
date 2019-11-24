@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="stylesheet" href="../CSS/all.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>ZooWolder</title>
@@ -14,56 +13,102 @@
 <body>
     <div class="wrapper">
         <div class="header">
-                <a href="../index.html"><p class="logo">Zoo<span>Worlder</span></p></a> 
+            <a href="../index.html">
+                <p class="logo">Zoo<span>Worlder</span></p>
+            </a>
             <div class="navbar-wrapper">
-                    <div class="navbar">
-                        <ul>
-                            <li><a href="../index.html"> Главная </a> </li>
-                            <li><a href="./catalog.html"> Каталог </a> </li>
-                            <li><a href="./rBasket.html"> Корзина </a> </li>
-                            <li><a href="./help.html"> Помощь </a> </li>
-                            <li><a href="./about.html"> О нас </a> </li>
-                        </ul>
-                    </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="../index.html"> Главная </a> </li>
+                        <li><a href="./catalog.html"> Каталог </a> </li>
+                        <li><a href="./rBasket.html"> Корзина </a> </li>
+                        <li><a href="./about.html"> О нас </a> </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="search__info">
+                <input class="search__label" type="search" name="q" placeholder="Поиск по сайту">
+                <input class="search__btn" type="submit" value="Найти">
+            </div>
         </div>
         <div class="a__content">
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum in rem est quisquam!
-                    Consectetur
-                    consequatur consequuntur nostrum, exercitationem repudiandae quas quaerat explicabo quibusdam
-                    doloremque nobis recusandae. Eos totam consequatur dicta!</p>
+            <div class="about__us">
+                <p>В зоомагазине вы найдёте товары и ветпрепараты для кошек, собак, рыб, птиц, грызунов,
+                    рептилей, земноводных и членистоногих. Купить зоотовары можно в одном из 3-х стационарных магазинов
+                    или заказать на сайте.</p>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas temporibus praesentium
-                    doloribus pariatur illum obcaecati, laboriosam quibusdam? Illo hic quibusdam delectus dignissimos.
-                    Quam tempora sapiente aliquam, eos porro harum!
+                    <em>Режим работы:</em>
+                    Прием и обработка заказов по телефонам: пн-чт: 9:00-18:00; птн: 9:00-17:00. Выходной: суббота,
+                    воскресенье и праздничные дни.
+                    Прием заказов через корзину покупателя - круглосуточно.
+                    Подробнее: https://zoowolder/pages/about.html
                 </p>
             </div>
-        </div>
-        <div class="footer">
-            <div class="adress__info">
-                <p> Республика Беларусь г. Лиды Гастелло 47 - 92</p>
-                <p>УНП которого нет</p>
-            </div>
-            <div class="copyright">
-                <p>Все права защищены 2019 <br>
-                    Pushkarev D.D. <br>
-                    &copy; Ormedia
-                </p>
-            </div>
-            <div class="btn__group">
-                <a href="https://www.viber.com/ru/" class="viber__btn"><i class="fab fa-viber"></i></a>
-                <a href="https://vk.com/" class="vk__btn"><i class="fab fa-vk"></i></a>
-                <a href="https://www.facebook.com/" class="fc__btn"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=ru" class="inst__btn"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
 
+            <div class="accordion">
+                <div class="tab">
+                    <input type="checkbox" id="tab1" name="tab-group">
+                    <label for="tab1" class="tab-title">Чем занимается ваша комания?</label>
+                    <section class="tab-content">
+                        <p>Мы занимаемся всех сопутствующих товаров для питомцев.
+                        </p>
+                        <ul>
+                            <li>Большой выбор кормов.</li>
+                            <li>Огромный ассортимент акксесуаров.</li>
+                            <li>А так же переноски и кроватки для вашего питомца.</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab2" name="tab-group">
+                    <label for="tab2" class="tab-title">Как можно оплатить понравившейся товар?</label>
+                    <section class="tab-content">
+                        <p>Мы принемаем:
+                        </p>
+                        <ul>
+                            <li>Наличный расчет при оплате в пункте выдачи или курьеру.</li>
+                            <li>Безналичный расчет при оплате через сайт.</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="tab3" name="tab-group">
+                    <label for="tab3" class="tab-title">Как я могу получить свои покупки?</label>
+                    <section class="tab-content">
+                        <p>Вы можете забрать товар в пункте выдачи или выбрать доставку курьером.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="map__item">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac96fb1bd562d6876a8c1993ac147d89da10b5b7b374eb189eca7d6caac20b854&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="adress__info">
+            <p> Республика Беларусь г. Лиды Гастелло 47 - 92</p>
+            <p>УНП которого нет</p>
+        </div>
+        <div class="copyright">
+            <p>Все права защищены 2019 <br>
+                Pushkarev D.D. <br>
+                &copy; Ormedia
+            </p>
+        </div>
+        <div class="btn__group">
+            <a href="https://www.viber.com/ru/" class="viber__btn"><i class="fab fa-viber"></i></a>
+            <a href="https://vk.com/" class="vk__btn"><i class="fab fa-vk"></i></a>
+            <a href="https://www.facebook.com/" class="fc__btn"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/?hl=ru" class="inst__btn"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script src="../JS/all.min.js"></script>
     <script src="../JS/main.js"></script>
+
 </body>
 
 </html>

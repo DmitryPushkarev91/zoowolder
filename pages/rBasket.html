@@ -14,41 +14,84 @@
 <body>
     <div class="wrapper">
         <div class="header">
-                <a href="../index.html"><p class="logo">Zoo<span>Worlder</span></p></a> 
+            <a href="../index.html">
+                <p class="logo">Zoo<span>Worlder</span></p>
+            </a>
             <div class="navbar-wrapper">
-                    <div class="navbar">
-                        <ul>
-                            <li><a href="../index.html"> Главная </a> </li>
-                            <li><a href="./catalog.html"> Каталог </a> </li>
-                            <li><a href="./rBasket.html"> Корзина </a> </li>
-                            <li><a href="./help.html"> Помощь </a> </li>
-                            <li><a href="./about.html"> О нас </a> </li>
-                        </ul>
-                    </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="../index.html"> Главная </a> </li>
+                        <li><a href="./catalog.html"> Каталог </a> </li>
+                        <li><a href="./rBasket.html"> Корзина </a> </li>
+                        <li><a href="./about.html"> О нас </a> </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="search__info">
+                <input class="search__label" type="search" name="q" placeholder="Поиск по сайту">
+                <input class="search__btn" type="submit" value="Найти">
+            </div>
         </div>
-        <div class="c__content">
+        <div class="rb__head">
+            <p class="rb__goods">Товар</p>
+            <p class="rb__quantity">Количество</p>
+            <p class="rb__summ">Цена</p>
+        </div>
+        <div class="rb__content">
+            <div class="product">
+                <div class="product__img">
+                    <img src="../img/catalog/cat/cat__feed1.jpg" alt="Cat1">
+                </div>
+                <div class="product__info">
+                    <a href="#">Кошачий корм Wisskass</a>
+                </div>
+                <div class="score__item">
+                    <button class="minus">-1</button>
+                    <input type="text" class="score">
+                    <button class="pluse">+1</button>
+                </div>
+                <div class="price__item">
+                    <label for="score__item">2 <i class="fas fa-ruble-sign"></i></label>
+                </div>
+                <div class="delete__product"><i class="fas fa-trash-alt"></i></div>
 
+            </div>
+            <div class="product">
+                <div class="product__img">
+                    <img src="../img/catalog/cat/cat__feed2.jpg" alt="Cat1">
+                </div>
+                <div class="product__info">
+                    <a href="#">Кошачий корм One</a>
+                </div>
+                <div class="score__item">
+                    <button class="minus">-1</button>
+                    <input type="text" class="score">
+                    <button class="pluse">+1</button>
+                </div>
+                <div class="price__item">
+                    <label for="score__item">2 <i class="fas fa-ruble-sign"></i></label>
+                </div>
+                <div class="delete__product"><i class="fas fa-trash-alt"></i></div>
+            </div>
         </div>
-        <div class="footer">
-            <div class="adress__info">
-                <p> Республика Беларусь г. Лиды Гастелло 47 - 92</p>
-                <p>УНП которого нет</p>
-            </div>
-            <div class="copyright">
-                <p>Все права защищены 2019 <br>
-                    Pushkarev D.D. <br>
-                    &copy; Ormedia
-                </p>
-            </div>
-            <div class="btn__group">
-                <a href="https://www.viber.com/ru/" class="viber__btn"><i class="fab fa-viber"></i></a>
-                <a href="https://vk.com/" class="vk__btn"><i class="fab fa-vk"></i></a>
-                <a href="https://www.facebook.com/" class="fc__btn"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=ru" class="inst__btn"><i class="fab fa-instagram"></i></a>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="adress__info">
+            <p> Республика Беларусь г. Лиды Гастелло 47 - 92</p>
+            <p>УНП которого нет</p>
         </div>
-
+        <div class="copyright">
+            <p>Все права защищены 2019 <br>
+                Pushkarev D.D. <br>
+                &copy; Ormedia
+            </p>
+        </div>
+        <div class="btn__group">
+            <a href="https://www.viber.com/ru/" class="viber__btn"><i class="fab fa-viber"></i></a>
+            <a href="https://vk.com/" class="vk__btn"><i class="fab fa-vk"></i></a>
+            <a href="https://www.facebook.com/" class="fc__btn"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/?hl=ru" class="inst__btn"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
